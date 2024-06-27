@@ -1,0 +1,118 @@
+/* src/assets/css/responsive.scss */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-section {
+      height: auto;
+      padding: 20px;
+    }
+  
+    .hero-content {
+      padding: 0 20px;
+    }
+  
+    .hero-button {
+      top: auto;
+      left: 0;
+      width: 100%;
+      position: relative;
+      margin-top: 20px;
+    }
+  
+    .overlay {
+      display: none; /* Hide the overlay image on small screens */
+    }
+  
+    .headerIcons {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .firstRow, .secondRow {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .menuItem {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Medium devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      padding: 30px;
+    }
+  
+    .hero-content {
+      padding: 0 30px;
+    }
+  
+    .hero-button {
+      top: auto;
+      left: 0;
+      width: 100%;
+      position: relative;
+      margin-top: 20px;
+    }
+  
+    .overlay {
+      display: none; /* Hide the overlay image on medium screens */
+    }
+  
+    .headerIcons {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .firstRow, .secondRow {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .menuItem {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .hero-section {
+      height: 768px; /* or whatever height you prefer */
+    }
+  
+    .hero-content {
+      padding-left: 50px;
+    }
+  
+    .hero-button {
+      top: 552px;
+      left: 146px;
+      width: 299px;
+      height: 55px;
+      position: absolute;
+    }
+  
+    .overlay {
+      display: block; /* Show the overlay image on large screens */
+    }
+  
+    .headerIcons {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .firstRow, .secondRow {
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .menuItem {
+      margin: 0 15px;
+    }
+  }
+  

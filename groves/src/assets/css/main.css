@@ -1,0 +1,54 @@
+/* src/assets/css/main.css */
+@import 'responsive.css'; 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+  --color-primary: #293606;
+  --color-secondary: #0F1500;
+  --color-accent1: #AD8749;
+  --color-accent2: #DCBB75;
+  --font-family-inter: 'Inter', sans-serif;
+  --font-weight-medium: 500;
+  --font-size-13px: 13px;
+  --font-color-white: #ffffff;
+  --letter-spacing-200: 0.2em; /* Adjusted to em for letter spacing */
+  --line-height-23: 23px;
+}
+
+body {
+  font-family: var(--font-family-inter);
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary)) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--font-color-white);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-accent2);
+}
+
+button {
+  background: linear-gradient(45deg, var(--color-accent1), var(--color-accent2));
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, var(--color-accent2), var(--color-accent1));
+}
+
+.text-inter-medium-13px {
+  font-family: var(--font-family-inter);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-13px);
+  color: var(--font-color-white);
+  letter-spacing: var(--letter-spacing-200);
+  line-height: var(--line-height-23);
+}

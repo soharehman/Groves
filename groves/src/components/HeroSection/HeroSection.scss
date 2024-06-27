@@ -1,0 +1,65 @@
+/* src/components/HeroSection/HeroSection.scss */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: transparent url('../../assets/images/Group 17252.png') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 654px;
+  height: 753px;
+  background-image: url('../../assets/images/Rectangle 18780@2x.png');
+  background-size: cover;
+  opacity: 0.52;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  padding: 20px;
+
+  .sub-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .main-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ensure the button takes full width */
+    position: absolute;
+    top: 552px;
+    left: 146px;
+    width: 299px;
+    height: 55px;
+
+    &:hover {
+      background-color: #e64a19;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/* src/components/FeaturedSection/FeaturedSection.scss */
+.featured-section {
+  padding: 40px 20px;
+  color: white;
+  background: var(--gradient-background);
+
+  .section-content {
+    text-align: left;
+    margin-bottom: 40px;
+
+    .section-heading {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-description {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .section-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ad8749;
+      border: none;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #dcbb75;
+      }
+    }
+  }
+
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+
+    .slider-item {
+      flex: 0 0 auto;
+      transition: transform 0.3s ease-in-out;
+      background-size: cover;
+      background-position: center;
+      border-radius: 30px;
+
+      &.large {
+        width: 385px;
+        height: 526px;
+      }
+
+      &.small {
+        width: 200px;
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .slider {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slider-item {
+      width: 80%;
+      margin-bottom: 20px;
+
+      &.large {
+        height: auto;
+      }
+
+      &.small {
+        height: auto;
+      }
+    }
+  }
+}

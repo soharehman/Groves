@@ -20,16 +20,18 @@
     }
 
     .section-button {
+      width: 349px;
+      height: 55px;
       padding: 10px 20px;
       font-size: 1rem;
-      background-color: #ad8749;
+      background: linear-gradient(90deg, #AD8749, #DCBB75);
       border: none;
       color: white;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #dcbb75;
+        background-color: #e64a19;
       }
     }
   }
@@ -40,41 +42,72 @@
     gap: 20px;
     padding: 20px;
 
+    .slick-slide {
+      padding: 0 10px; // Adjust spacing between cards
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+
+      &.slick-center {
+        transform: scale(1.1);
+      }
+    }
+
     .slider-item {
-      flex: 0 0 auto;
       transition: transform 0.3s ease-in-out;
       background-size: cover;
       background-position: center;
-      border-radius: 30px;
+      border-radius: 25px; // Set border-radius
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; // Align content to the top
+
+      img {
+        border-radius: 25px 25px 0 0; // Set border-radius
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .image-heading {
+        margin-top: 10px; // Space between image and heading
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0 0 25px 25px; // Set border-radius
+      }
 
       &.large {
-        width: 385px;
-        height: 526px;
+        width: 285px; // Set width for large item
+        height: 426px; // Set height for large item
       }
 
       &.small {
-        width: 200px;
-        height: 300px;
+        width: 228px; // Set width for small item
+        height: 322px; // Set height for small item
       }
     }
   }
 
   @media (max-width: 768px) {
+    .section-content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
     .slider {
       flex-direction: column;
       align-items: center;
-    }
 
-    .slider-item {
-      width: 80%;
-      margin-bottom: 20px;
+      .slider-item {
+        width: 100%;
+        margin-bottom: 20px;
 
-      &.large {
-        height: auto;
-      }
-
-      &.small {
-        height: auto;
+        &.large,
+        &.small {
+          height: auto;
+        }
       }
     }
   }

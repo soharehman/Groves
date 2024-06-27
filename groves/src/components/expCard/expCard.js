@@ -51,7 +51,6 @@ const FeaturedSection = () => {
             onClick={() => handleImageClick(index)}
           >
             <img src={image} alt={`Feature ${index + 1}`} />
-            <div className="image-heading">Heading {index + 1}</div>
           </div>
         ))}
       </Slider>

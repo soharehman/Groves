@@ -1,6 +1,8 @@
 /* src/assets/css/main.css */
 @import 'responsive.css'; 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 :root {
   --color-primary: #293606;

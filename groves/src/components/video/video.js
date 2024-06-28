@@ -4,8 +4,12 @@ import './Video.scss';
 const Video = () => {
   return (
     <div className="video-container">
-      <h2 className="heading">Our Latest Video</h2>
-      <p className="description">Watch this video to learn more about our services and offerings.</p>
+      <h2 className="heading">Mall Of: Endless Possibilities</h2>
+      <p className="description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+        <br /> the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        <br />scrambled it to make a type specimen book.
+      </p>
       <div className="video-wrapper">
         <div className="thumbnail"></div>
         <div className="play-button">

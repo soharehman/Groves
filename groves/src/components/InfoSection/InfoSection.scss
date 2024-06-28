@@ -1,57 +1,110 @@
-/* src/components/InfoSection/InfoSection.scss */
-.info-section {
-    display: flex;
-    align-items: center;
-    padding: 40px 20px;
-    background: var(--gradient-background);
-  
-    .info-image {
-      flex: 1;
+.infosection {
+  background: var(--gradient-background);
+  color: white;
+
+  .infosection-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .infosection-content {
+    .infosection-subheading {
+      font-family: 'Playfair', serif;
+      font-size: 1.2rem; /* Adjust heading size */
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .infosection-heading {
+      font-family: 'Playfair', serif;
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: white; /* Ensure the heading text is white */
+    }
+
+    .infosection-description {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: white; /* Ensure the description text is white */
+    }
+
+    .infosection-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: linear-gradient(90deg, #AD8749, #DCBB75);
+      width: 190px;
+   border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: #e64a19;
+      }
+
+      .infosection-arrow-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .infosection-content {
+      padding-left: 0;
+      padding-top: 20px;
+
+      .infosection-subheading {
+        font-size: 12px;
+        text-align: left;
+      }
+
+      .infosection-heading {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+        text-align: left;
+        padding-top: 20px;
+        font-family: 'Playfair';
+      }
+
+      .infosection-description {
+        font-size: 10px; /* Adjust description size for mobile */
+        text-align: left;
+      }
+
+      .infosection-button {
+        font-size: 12px; /* Adjust button font size for mobile */
+        width: 150px;
+        border-radius: 10px;
+      }
+    }
+
+    .infosection-image {
+      padding-top: 20px;
       img {
         width: 100%;
         height: auto;
         border-radius: 25px;
       }
     }
-  
-    .info-content {
-      flex: 1;
-      padding-left: 20px;
-  
-      .info-heading {
-        font-family: 'Inter', sans-serif;
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-  
-      .info-description {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-      }
-  
-      .info-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-        background: linear-gradient(90deg, #AD8749, #DCBB75);
-        border: none;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s;
-  
-        &:hover {
-          background-color: #e64a19;
-        }
-      }
-    }
-  
-    @media (max-width: 768px) {
-      flex-direction: column;
-  
-      .info-content {
-        padding-left: 0;
-        padding-top: 20px;
-        text-align: center;
-      }
-    }
   }
-  
+}
+
+/* Additional Bootstrap gradient background button */
+.btn-gradient {
+  background: linear-gradient(90deg, #AD8749, #DCBB75);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: #e64a19;
+  }
+}

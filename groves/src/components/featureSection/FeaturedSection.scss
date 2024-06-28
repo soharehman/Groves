@@ -1,49 +1,39 @@
-/* src/components/FeaturedSection/FeaturedSection.scss */
 .featured-section {
   padding: 40px 20px;
   color: white;
   background: var(--gradient-background);
+  margin-top: 140px;
 
-  .section-content {
-    text-align: left;
-    margin-bottom: 40px;
+  .featured-section-heading {
+    font-family: 'Playfair', serif;
+    font-size: 50px;
+  }
 
-    .section-heading {
-      font-family: 'Inter', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
+  .btn-gradient {
+    width: 299px;
+    height: 55px;
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #AD8749, #DCBB75);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
-    .section-description {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .section-button {
-      width: 349px;
-      height: 55px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      background: linear-gradient(90deg, #AD8749, #DCBB75);
-      border: none;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #e64a19;
-      }
+    &:hover {
+      background-color: #e64a19;
     }
   }
 
-  .slider {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 20px;
+  .featured-arrow-icon {
+    width: 23px;
+  }
 
+  .featured-slider {
     .slick-slide {
-      padding: 0 10px; // Adjust spacing between cards
+      padding: 0 5px; // Minimize gap between cards
       box-sizing: border-box;
       transition: transform 0.3s ease-in-out;
 
@@ -52,61 +42,72 @@
       }
     }
 
-    .slider-item {
+    .featured-slider-item {
       transition: transform 0.3s ease-in-out;
       background-size: cover;
       background-position: center;
-      border-radius: 25px; // Set border-radius
+      border-radius: 25px;
       cursor: pointer;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; // Align content to the top
+      justify-content: flex-start;
 
       img {
-        border-radius: 25px 25px 0 0; // Set border-radius
+        border-radius: 25px 25px 0 0;
         width: 100%;
         height: auto;
         object-fit: cover;
       }
 
-      .image-heading {
-        margin-top: 10px; // Space between image and heading
-        background-color: rgba(0, 0, 0, 0.5);
+      .featured-image-heading {
+        margin-top: 10px;
+        font-family: 'Playfair', serif;
+        font-size: 20px;
         color: white;
         text-align: center;
         padding: 10px;
-        border-radius: 0 0 25px 25px; // Set border-radius
+        border-radius: 0 0 25px 25px;
+        background: none; // Remove background color
       }
 
-      &.large {
-        width: 285px; // Set width for large item
-        height: 426px; // Set height for large item
+      &.featured-large {
+        width: 285px;
+        height: 426px;
       }
 
-      &.small {
-        width: 228px; // Set width for small item
-        height: 322px; // Set height for small item
+      &.featured-small {
+        width: 228px;
+        height: 322px;
       }
     }
   }
 
   @media (max-width: 768px) {
-    .section-content {
-      width: 100%;
-      margin-bottom: 20px;
+    .featured-section-heading {
+      font-size: 30px;
     }
 
-    .slider {
-      flex-direction: column;
-      align-items: center;
+    .btn-gradient {
+      width: 100%;
+      max-width: 240px;
+      height: 50px;
+      font-size: 10px;
+    }
 
-      .slider-item {
-        width: 100%;
+    .featured-slider {
+      .featured-slider-item {
+        width: 150px;
+        height: 200px;
         margin-bottom: 20px;
 
-        &.large,
-        &.small {
-          height: auto;
+        &.featured-large,
+        &.featured-small {
+          width: 150px;
+          height: 200px;
+        }
+
+        .featured-image-heading {
+          font-size: 35px; // Adjust font size for mobile
         }
       }
     }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FeaturedSection.scss';
@@ -12,6 +12,7 @@ const images = [image1, image2, image3, image4];
 const titles = ["Little Krazy", "Hawanium Groves City", "Picnic Market", "Lucawa"];
 
 const FeaturedSection = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: false,
@@ -21,6 +22,7 @@ const FeaturedSection = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: false,
+    beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
       {
         breakpoint: 768,
@@ -31,6 +33,19 @@ const FeaturedSection = () => {
       },
     ],
   };
+
+  useEffect(() => {
+    const slides = document.querySelectorAll('.featured-slider-item');
+    slides.forEach((slide, index) => {
+      if (index === currentSlide) {
+        slide.classList.add('featured-large');
+        slide.classList.remove('featured-small');
+      } else {
+        slide.classList.remove('featured-large');
+        slide.classList.add('featured-small');
+      }
+    });
+  }, [currentSlide]);
 
   return (
     <div className="featured-section container">

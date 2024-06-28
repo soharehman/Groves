@@ -21,7 +21,7 @@
     margin-bottom: 10px;
   }
 
-  .footer-download-buttons img {
+  .footer-download-img {
     width: 120px;
     height: auto;
   }
@@ -31,7 +31,7 @@
     height: 65px;
   }
 
-  .footer-icons img {
+  .footer-icon {
     width: 30px;
     height: auto;
   }
@@ -64,12 +64,10 @@
 
     .footer-logo {
       margin: 0;
-    
       width: 200px;
       height: 46px;
       margin-bottom: 20px;
-      margin-right: 20px
-     
+      margin-right: 20px;
     }
 
     .d-flex {
@@ -89,17 +87,20 @@
     .footer-icons img {
       margin-bottom: 0;
     }
+
     .footer-heading {
-      font-family: Playfair;
+      font-family: 'Playfair', serif;
       font-size: 35px;
     }
+
     .footer-download-text {
       font-family: 'Inter', sans-serif;
       font-size: 10px;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
-    .footer-download-buttons img {
+
+    .footer-download-img {
       width: 120px;
       height: auto;
       margin-right: 20px;

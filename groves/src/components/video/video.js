@@ -1,6 +1,6 @@
 import React from 'react';
 import './Video.scss';
-import arrowIcon from '../../assets/images/icons/Path 41544.png'; // Path to the provided icon
+import arrowIcon from '../../assets/images/icons/Path 41544.png'; 
 
 const Video = () => {
   return (

@@ -28,8 +28,8 @@ const Footer = () => {
               <h2 className="footer-heading">Join us for an <br /> unforgettable experience</h2>
               <h6 className="footer-download-text">DOWNLOAD THE GROOVE</h6>
               <div className="footer-download-buttons d-flex justify-content-center">
-                <img src={appStoreImage} alt="Apple Store" className="me-2" />
-                <img src={playStoreImage} alt="Play Store" />
+                <img src={appStoreImage} alt="Apple Store" className="footer-download-img me-2" />
+                <img src={playStoreImage} alt="Play Store" className="footer-download-img" />
               </div>
             </div>
           </div>
@@ -58,10 +58,10 @@ const Footer = () => {
           <div className="footer-row row mb-4">
             <div className="col-12 text-left">
               <div className="footer-icons d-flex justify-content-start flex-wrap">
-                <img src={newIcon1} alt="Icon 1" className="me-2" style={{ width: '27px', height: '30px' }} />
-                <img src={newIcon2} alt="Icon 2" className="me-2" style={{ width: '30px', height: '30px' }} />
-                <img src={newIcon3} alt="Icon 3" className="me-2" style={{ width: '29px', height: '30px' }} />
-                <img src={newIcon4} alt="Icon 4" style={{ width: '30px', height: '28px' }} />
+                <img src={newIcon1} alt="Icon 1" className="footer-icon me-2" />
+                <img src={newIcon2} alt="Icon 2" className="footer-icon me-2" />
+                <img src={newIcon3} alt="Icon 3" className="footer-icon me-2" />
+                <img src={newIcon4} alt="Icon 4" className="footer-icon" />
               </div>
             </div>
           </div>
@@ -74,9 +74,9 @@ const Footer = () => {
                 <h3 className="footer-column-heading">@2023 The Groves for Entertainment</h3>
               </div>
               <div className="footer-icons d-flex justify-content-start mt-2">
-                <img src={icon1} alt="Icon 1" className="me-2" style={{ width: '43px', height: '14px' }} />
-                <img src={icon2} alt="Icon 2" className="me-2" style={{ width: '31px', height: '31px' }} />
-                <img src={icon3} alt="Icon 3" className="me-2" style={{ width: '26px', height: '26px' }} />
+                <img src={icon1} alt="Icon 1" className="footer-icon me-2" />
+                <img src={icon2} alt="Icon 2" className="footer-icon me-2" />
+                <img src={icon3} alt="Icon 3" className="footer-icon me-2" />
               </div>
             </div>
           </div>
@@ -92,8 +92,8 @@ const Footer = () => {
             <div className="col-md-6 text-md-end">
               <h6 className="footer-download-text">DOWNLOAD THE GROOVE</h6>
               <div className="footer-download-buttons d-flex justify-content-end">
-                <img src={appStoreImage} alt="Apple Store" className="me-2" />
-                <img src={playStoreImage} alt="Play Store" />
+                <img src={appStoreImage} alt="Apple Store" className="footer-download-img me-2" />
+                <img src={playStoreImage} alt="Play Store" className="footer-download-img" />
               </div>
             </div>
           </div>
@@ -127,10 +127,10 @@ const Footer = () => {
             </div>
             <div className="col-md-6 text-md-end">
               <div className="footer-icons d-flex justify-content-end">
-                <img src={newIcon1} alt="Icon 1" className="me-2" style={{ width: '27px', height: '30px' }} />
-                <img src={newIcon2} alt="Icon 2" className="me-2" style={{ width: '30px', height: '30px' }} />
-                <img src={newIcon3} alt="Icon 3" className="me-2" style={{ width: '29px', height: '30px' }} />
-                <img src={newIcon4} alt="Icon 4" style={{ width: '30px', height: '28px' }} />
+                <img src={newIcon1} alt="Icon 1" className="footer-icon me-2" />
+                <img src={newIcon2} alt="Icon 2" className="footer-icon me-2" />
+                <img src={newIcon3} alt="Icon 3" className="footer-icon me-2" />
+                <img src={newIcon4} alt="Icon 4" className="footer-icon" />
               </div>
             </div>
           </div>
@@ -146,9 +146,9 @@ const Footer = () => {
             </div>
             <div className="col-md-6 col-12 text-md-end">
               <div className="footer-icons d-flex justify-content-end">
-                <img src={icon1} alt="Icon 1" className="me-2" style={{ width: '43px', height: '14px' }} />
-                <img src={icon2} alt="Icon 2" className="me-2" style={{ width: '31px', height: '31px' }} />
-                <img src={icon3} alt="Icon 3" className="me-2" style={{ width: '26px', height: '26px' }} />
+                <img src={icon1} alt="Icon 1" className="footer-icon me-2" />
+                <img src={icon2} alt="Icon 2" className="footer-icon me-2" />
+                <img src={icon3} alt="Icon 3" className="footer-icon me-2" />
               </div>
             </div>
           </div>
